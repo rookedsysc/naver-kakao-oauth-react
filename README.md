@@ -18,3 +18,8 @@ REACT_APP_KAKAO_CLIENT_ID=YOUR_KAKAO_CLIENT_ID
 ```console
 npm start
 ```
+
+## 이후의 로직 
+
+1. Naver의 경우 CSRF 방지를 위해서 front에서 정한 state와 인가코드를 back으로 넘겨주고 백에서 처리합니다.
+1. Kakao의 경우 프론트에서 인가코드를 발급받은 RedirectUri(이 프로젝트의 경우 http://localhost:3000/kakao/callback에 해당)와 인가코드를 백엔드로 넘겨주고 백에서 처리합니다.
