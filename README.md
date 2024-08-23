@@ -1,6 +1,6 @@
 ## Overview 
 
-백엔드에서 인가코드를 받고 Naver에서 Access Token을 받은 후 User 정보를 받아올 때 [인가]까지의 과정을 구현한 Reac Project 입니다.
+백엔드에서 인가코드를 받고 Naver or Kakao에서 인가 코드를 받은 후 인가코드를 활용해서 RestAPI 방식으로 로그인할 때, [인가코드 발급]까지의 로직을 담고 있습니다. 
 
 ## How To Start
 
