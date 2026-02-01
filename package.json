@@ -13,7 +13,8 @@
     "web-vitals": "^4.2.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "HTTPS=true SSL_CRT_FILE=conf/ssl/server.crt SSL_KEY_FILE=conf/ssl/server.key PORT=443 react-scripts start",
+    "start:dev": "HTTPS=true SSL_CRT_FILE=conf/ssl/server.crt SSL_KEY_FILE=conf/ssl/server.key PORT=443 HOST=localhost.com react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
